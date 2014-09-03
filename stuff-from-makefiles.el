@@ -3,7 +3,7 @@
 
 (defcustom sfmf-regex-alist
   '((:curdir . "^CURDIR :?= \\(?1:[[:graph:]]+\\)$")
-    (:include-dir . "\\(^\\|.*[[:blank:]]\\)-I[[:blank:]]*\\(?1:[[:graph:]]+\\)"))
+    (:include-dir . "\\(^\\|.*?[[:blank:]]\\)-I[[:blank:]]*\\(?1:[[:graph:]]+\\)"))
   "((thing-type . regex) ...)")
 
 (defun sfmf--make-output (&optional makefile)
