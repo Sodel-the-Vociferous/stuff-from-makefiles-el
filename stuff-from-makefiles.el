@@ -40,7 +40,7 @@
                     (push (expand-file-name val curdir)
                           include-dirs))
                    (t nil)))))))
-   :test 'equal))
+   :test 'string=))
 
 (defun sfmf-read (&optional makefile)
   (let* ((lines (sfmf--make-output makefile))
