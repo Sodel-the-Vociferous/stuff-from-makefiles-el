@@ -46,5 +46,3 @@
   (let* ((lines (sfmf--make-output makefile))
          (line-alists (delete-if 'null (mapcar 'sfmf--line-parse lines))))
     (list :include-dirs (sfmf--list-include-dirs line-alists))))
-
-(sfmf-read "~/src/navsim/RG5/proto1_compile_dangit/Makefile")
